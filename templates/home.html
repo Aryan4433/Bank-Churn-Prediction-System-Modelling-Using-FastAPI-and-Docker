@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Churn Prediction System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      animation: fadeInUp 1.2s ease;
+    }
+    .btn-custom {
+      background-color: #ff9800;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      color: #fff;
+      transition: 0.3s;
+      animation: fadeIn 1.5s ease;
+      text-decoration: none;
+    }
+    .btn-custom:hover {
+      background-color: #e68900;
+      transform: scale(1.05);
+    }
+    .features {
+      padding: 60px 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .feature-box {
+      padding: 30px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .feature-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    }
+    .feature-box i {
+      font-size: 2rem;
+      color: #2a5298;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #1e3c72;
+      color: #ddd;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>🏦 Bank Churn Prediction System</h1>
+      <p>Leverage AI & Machine Learning to predict customer churn and enhance retention strategies.</p>
+      <!-- Updated Button -->
+      <a href="http://localhost:8501" target="_blank" class="btn btn-custom">
+        <i class="fas fa-magic"></i> Try Prediction
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features container">
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="feature-box">
+          <i class="fas fa-chart-line"></i>
+          <h5>Accurate Predictions</h5>
+          <p>Our AI model is trained on real banking data to give highly accurate churn forecasts.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <i class="fas fa-users"></i>
+          <h5>Customer Insights</h5>
+          <p>Understand which customers are at risk and take proactive measures to retain them.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <i class="fas fa-lock"></i>
+          <h5>Secure & Reliable</h5>
+          <p>Data is handled with enterprise-level security standards for maximum confidentiality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bank Churn Prediction System | Powered by FastAPI & Machine Learning</p>
+  </footer>
+
+</body>
+</html>
